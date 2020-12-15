@@ -108,6 +108,7 @@ RUN \
 	tar \
 	uriparser-dev \
 	wget \
+	mc \
 	x264-dev \
 	x265-dev \
 	zlib-dev

@@ -6,7 +6,7 @@ ARG ARGTABLE_VER="2.13"
 ARG XMLTV_VER="v0.6.1"
 
 # environment settings
-ARG TZ="Europe/Oslo"
+ARG TZ="Europe/Vilnius"
 ARG TVHEADEND_COMMIT
 ENV HOME="/config"
 
@@ -180,6 +180,7 @@ RUN \
 	--enable-pngquant \
 	--enable-trace \
 	--enable-vaapi \
+	--enable-ddci \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
 	--mandir=/usr/share/man \

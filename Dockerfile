@@ -336,6 +336,9 @@ COPY --from=buildstage /usr/local/share/man/ /usr/local/share/man/
 COPY --from=buildstage /usr/local/share/perl5/ /usr/local/share/perl5/
 COPY root/ /
 
+RUN \
+ chmod +x /usr/bin/wicardd-x64.1.19
+ 
 # ports and volumes
 EXPOSE 9981 9982 8888 10000
 VOLUME /config

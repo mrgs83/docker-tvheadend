@@ -337,5 +337,5 @@ COPY --from=buildstage /usr/local/share/perl5/ /usr/local/share/perl5/
 COPY root/ /
 
 # ports and volumes
-EXPOSE 9981 9982
+EXPOSE 9981 9982 8888 10000
 VOLUME /config
